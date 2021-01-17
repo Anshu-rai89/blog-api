@@ -4,7 +4,8 @@ const port = 8000;
 const app = express();
 
 const db = require("./config/mongoose");
-
+const passport = require("passport");
+const passportjwt = require("./config/passport-jwt");
 //Middlewares
 app.use(express.json());
 
